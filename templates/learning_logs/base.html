@@ -1,0 +1,58 @@
+{% load static %}
+{% load tailwind_tags %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Assets/css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'Assets/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'Assets/css/topicstyle.css' %}" />
+    <link rel='stylesheet' href="{% static 'Assets/css/newtopic.css' %}" />
+
+    {% tailwind_css %}
+
+</head>
+
+<body>
+<nav class='nav-bar'>
+  <div class='nav-left'>
+    <a href="{% url 'learning_logs:index' %}">Home</a>
+  </div>
+
+  <div class='nav-right'>
+    <a>About</a>
+    <a>Profile</a>
+    {% if user.is_authenticated %}
+      <a>Hello<strong>{{user.username}}</strong></a>
+    {% endif %}
+
+  </div>
+</nav>
+
+{% block title %} {% endblock %}
+
+
+  {% block content %}
+  
+  {% endblock %}
+
+</body>
+
+
+
+
+
+
+<style>
+  body{
+    max-width: 1350px;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 0 auto;
+  }
+</style>
+
+</html>

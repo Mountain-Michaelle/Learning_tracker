@@ -1,0 +1,17 @@
+{% extends 'learning_logs/base.html' %}
+
+
+
+
+{% block content %}
+    <div class='new-topic'>
+        <p>Make a new entry for <strong>{{ topic.text|truncatechars:15 }}</strong>
+        
+            <form action="{% url 'learning_logs:new_entry' topic.id %}" method='post'>
+                {% csrf_token %}
+                {{form.as_div}}
+                <button name='submit'>SUBMIT</button>
+            </form>
+            
+    </div>
+{% endblock %}

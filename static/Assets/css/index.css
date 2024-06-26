@@ -1,0 +1,69 @@
+.index{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url('../images/students.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header{
+    height: 350px;
+    max-height: 400px;
+    position: relative;
+    background: #1f0039;
+    padding: 10px;
+    display: flex;
+    background-image: url('../images/learn.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-txt{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0px 20px 0;
+    background: #ca840a;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.header-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-left button{
+    padding: 4px;
+    border: 2px solid #ca840a;
+    background: #00000094;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: rgb(216 174 255);
+
+}
+
+.header-index{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-index button{
+    padding: 20px;
+    border: 2px solid rgb(67, 0, 129);
+    background: #ca840a;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+
+}
