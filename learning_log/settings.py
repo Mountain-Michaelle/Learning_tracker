@@ -140,4 +140,5 @@ TAILWIND_CSS_PATH = 'css/dist/styles.css'
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 
-LOGIN_DIRECT_URL = 'learning_logs:index'
+LOGIN_REDIRECT_URL = 'learning_logs:index'
+LOGOUT_REDIRECT_URL = 'learning_logs:index'

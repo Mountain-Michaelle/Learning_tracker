@@ -2,12 +2,12 @@
 
 {% block content %}
     <div class='new-topic'>
-        <p>Editing entries for <strong>{{ topic.text|truncatechars:15 }}</strong>
+        <p>Edit entries for <strong>{{ topic.text|truncatechars:15 }}</strong>
         
             <form action="{% url 'learning_logs:edit_entry' entry.id %}" method='post'>
                 {% csrf_token %}
                 {{form.as_div}}
-                <button name='submit'>SAVE CHANGES <button>
+                <button name='submit'> SAVE CHANGES <button>
             </form>
             
     </div>

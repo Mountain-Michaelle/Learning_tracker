@@ -1,14 +1,16 @@
 from django.shortcuts import render, redirect
 from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def index(request):
     return render(request, 'learning_logs/index.html')
 
+@login_required
 def topics(request):
     """ Showing all topics """
-    topics = Topic.objects.order_by('-date_added')
+    topics = Topic.objects.filter(owner=request.user).order_by('date_added')
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
 
@@ -28,7 +30,9 @@ def new_topic(request):
         # Post data submitted; process data.
         form = TopicForm(data=request.POST)
         if form.is_valid():
-            form.save()
+            new_topic = form.save(commit=False)
+            new_topic.owner = request.user
+            new_topic.save()
             return redirect('learning_logs:topics')
     # Display a blank or invalid form
     context = {'form': form}
