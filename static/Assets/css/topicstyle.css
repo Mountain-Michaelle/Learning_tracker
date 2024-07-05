@@ -54,7 +54,17 @@
     position: absolute;
     color: white;
     right: 5%;
+    display: flex;
+    gap: 1rem;
 
+}
+
+.add-delete{
+    position: absolute;
+    color: white;
+    right: 10%;
+
+    display: flex;
 }
 
 .entry_cont{

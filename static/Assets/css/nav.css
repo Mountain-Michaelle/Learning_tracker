@@ -19,12 +19,15 @@
     margin-top: 1.3rem;
 }
 
-
 .nav-right{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+}
+
+.nav-right a strong{
+    color: #fff05c;
 }
 
 .nav-right a{
@@ -48,6 +51,7 @@
 .active{
     display: none;
 }
+
 @media screen and (max-width: 700px){
 
     .toggle{

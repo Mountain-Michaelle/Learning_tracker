@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
 from django.contrib.auth.decorators import login_required
+from django.http import Http404, HttpResponseRedirect
 # Create your views here.
 
 def index(request):
@@ -78,3 +79,11 @@ def edit_entry(request, entry_id):
     context = {'entry': entry, 'topic':topic, 'form':form}
     
     return render(request, 'learning_logs/edit_entry.html', context)
+
+
+
+def delete_topic(request, topic_id):
+    topic = Topic.objects.get(id=topic_id)
+    topic.delete()
+    
+    return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
