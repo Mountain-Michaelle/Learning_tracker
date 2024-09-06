@@ -50,6 +50,13 @@
     text-transform: capitalize;
 }
 
+.topic a{
+    color: #E91E63;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .add-icon{
     position: absolute;
     color: white;
@@ -137,7 +144,6 @@ gap: 1rem;
 position: relative;
 color: white;
 font-weight: 400;
-padding: 20px;
 text-align: justify;
 }
 

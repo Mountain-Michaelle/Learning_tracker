@@ -41,11 +41,12 @@
 }
 
 .new-topic form button{
-    font-size: 1.2rem;
+    border: none;
+    font-size: 1.1rem;
     padding: 7px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #dcffb2;
+    color: #E91E63;
 }
 
 

@@ -60,10 +60,14 @@
 
 .header-index button{
     padding: 20px;
-    border: 2px solid rgb(67, 0, 129);
+    border: 2px solid rgb(255 255 255);
     background: #ca840a;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
+}
 
+.header-index button a{
+    text-decoration: none;
+    color: white;
 }

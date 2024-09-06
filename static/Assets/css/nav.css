@@ -19,6 +19,13 @@
     margin-top: 1.3rem;
 }
 
+.nav-left a{
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .nav-right{
     display: flex;
     justify-content: center;
@@ -33,6 +40,9 @@
 .nav-right a{
     font-size: 1.1rem;
     font-weight: 500;
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
 }
 
 .nav-right form button{
@@ -64,10 +74,17 @@
     }
     
     .btn{
+        
         display: flex;
         justify-content: center;
         height: 100%;
         margin-top: 0.5rem;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+        width: 3.5rem;
+    }
     }
 
     .dropdown{
