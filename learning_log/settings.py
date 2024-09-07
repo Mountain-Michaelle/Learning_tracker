@@ -161,7 +161,7 @@ INTERNAL_IPS = [
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 
-LOGIN_REDIRECT_URL = 'learning_logs:index'
+LOGIN_REDIRECT_URL = 'learning_logs:topics'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
 
 
