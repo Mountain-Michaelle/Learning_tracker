@@ -1,0 +1,58 @@
+.new-topic{
+    background-image: url('../images/create.png');
+    background-size: cover;
+    background-color: #efadff;
+    width: 100%;
+    min-width: 350px;
+    height: 100vh;
+}
+
+.new-topic form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4rem;
+    gap: 1rem;
+    padding: 20px;
+    background-color: #922f2f52;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: -8px 12px 20px 0px #e866f3;
+    overflow: hidden !important;
+    min-width: 300px;
+}
+.new-topic p{
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+}
+.new-topic form input{
+    width: 100%;
+    margin: 0 auto;
+    min-width: 200px;
+    height: 55px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.new-topic form button{
+    border: none;
+    font-size: 1.1rem;
+    padding: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #E91E63;
+}
+
+
+.new-topic form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    min-width: 250px;
+}
